@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOS Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Front Page -->
+  <div id="front-page" class="page">
+    <div class="front-container">
+      <h1 class="game-title">Welcome to SOS Game</h1>
+      <!-- From Uiverse.io by zjssun --> 
+
+      <button id="grid-5x5" class="grid-btn">Play 5x5</button>
+      <button id="grid-10x10" class="grid-btn">Play 10x10</button>
+  
+    </div>
+  </div>
+
+  <!-- Game Page -->
+  <div id="game-page" class="page hidden">
+    <header>
+      <h1>SOS Game</h1>
+      <div id="scoreboard">
+        <div>Player 1 Score: <span id="score1">0</span></div>
+        <div>Player 2 Score: <span id="score2">0</span></div>
+      </div>
+      <div id="controls">
+        <button id="choose-s">Choose S</button>
+        <button id="choose-o">Choose O</button>
+        <button id="reset">Reset</button>
+      </div>
+      <p id="status">Player 1's turn. Choose S or O.</p>
+    </header>
+    <div id="board" class="board"></div>
+  </div>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
